@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_events.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_events.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_gradebook.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_gradebook.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_teacher_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_teacher_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_exam_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_exam_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_timetable.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_timetable.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_announcements.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_announcements.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_system_settings.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_system_settings.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_student_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_student_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/nav_header.xml",
+        "source": "com.school.management.app-main-56:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_attendance_report.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_attendance_report.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_class_detail.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_class_detail.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_teacher_profile.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_teacher_profile.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_calendar.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_calendar.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_users_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_users_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_messaging.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_messaging.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_forgot_password.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_register_user.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_register_user.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_splash.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_class_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_class_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_fee_management.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_fee_management.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_payment_history.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_payment_history.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_parent_dashboard.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_parent_dashboard.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_student_profile.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_student_profile.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_main.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_book_issue.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_book_issue.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_login.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_add_student.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_add_student.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_attendance.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_attendance.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_library.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_library.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_user_profile.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_user_profile.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_report_card.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_report_card.xml"
+    }
+]
