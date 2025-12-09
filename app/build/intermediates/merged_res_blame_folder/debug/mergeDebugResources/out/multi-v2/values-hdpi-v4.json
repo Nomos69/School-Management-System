@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.school.management.app-mergeDebugResources-52:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\rhimar and rhave\\.gradle\\caches\\8.13\\transforms\\2f88f734b33a8d60ff3cf93379a086e1\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

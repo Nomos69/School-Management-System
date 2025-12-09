@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.school.management.app-mergeDebugResources-52:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\rhimar and rhave\\.gradle\\caches\\8.13\\transforms\\2f88f734b33a8d60ff3cf93379a086e1\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

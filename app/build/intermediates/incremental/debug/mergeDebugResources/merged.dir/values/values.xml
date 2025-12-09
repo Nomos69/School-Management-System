@@ -2092,7 +2092,6 @@
     <string name="dashboard">Dashboard</string>
     <string name="date">Date</string>
     <string name="date_of_birth">Date of Birth</string>
-    <string name="default_web_client_id" translatable="false">YOUR_CLIENT_ID</string>
     <string name="delete">Delete</string>
     <string name="description">Description</string>
     <string name="designation">Designation</string>
@@ -2135,12 +2134,12 @@
     <string name="filter">Filter</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="full_name">Full Name</string>
-    <string name="gcm_defaultSenderId" translatable="false">YOUR_PROJECT_NUMBER</string>
+    <string name="gcm_defaultSenderId" translatable="false">541125614294</string>
     <string name="gender">Gender</string>
-    <string name="google_api_key" translatable="false">YOUR_API_KEY</string>
-    <string name="google_app_id" translatable="false">YOUR_MOBILE_SDK_APP_ID</string>
-    <string name="google_crash_reporting_api_key" translatable="false">YOUR_API_KEY</string>
-    <string name="google_storage_bucket" translatable="false">YOUR_PROJECT_ID.appspot.com</string>
+    <string name="google_api_key" translatable="false">AIzaSyAZ_RSsdLk-ZGvPTf6On4zu7UZ1n7w3sBU</string>
+    <string name="google_app_id" translatable="false">1:541125614294:android:d4c1138b6b5c0023404777</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAZ_RSsdLk-ZGvPTf6On4zu7UZ1n7w3sBU</string>
+    <string name="google_storage_bucket" translatable="false">school-management-app-b2c49.firebasestorage.app</string>
     <string name="grade">Grade</string>
     <string name="gradebook">Gradebook</string>
     <string name="guardian">Guardian</string>
@@ -2292,7 +2291,7 @@
     <string name="permissions">Permissions</string>
     <string name="phone_number">Phone Number</string>
     <string name="present">Present</string>
-    <string name="project_id" translatable="false">YOUR_PROJECT_ID</string>
+    <string name="project_id" translatable="false">school-management-app-b2c49</string>
     <string name="qualification">Qualification</string>
     <string name="receipt">Receipt</string>
     <string name="register">Register</string>
