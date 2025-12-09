@@ -64,6 +64,21 @@ public class LoginActivity extends AppCompatActivity {
             // Only admins can register new users from settings
             Toast.makeText(this, "Please contact admin to register", Toast.LENGTH_SHORT).show();
         });
+        
+        // Hidden admin setup - Long press on logo/title 5 times
+        View titleView = findViewById(R.id.tvTitle);
+        if (titleView != null) {
+            final int[] clickCount = {0};
+            titleView.setOnClickListener(v -> {
+                clickCount[0]++;
+                if (clickCount[0] >= 5) {
+                    Intent intent = new Intent(LoginActivity.this, 
+                            com.school.management.activities.admin.AdminSetupActivity.class);
+                    startActivity(intent);
+                    clickCount[0] = 0;
+                }
+            });
+        }
     }
 
     private void attemptLogin() {
@@ -96,6 +111,9 @@ public class LoginActivity extends AppCompatActivity {
         authRepository.login(email, password).observe(this, user -> {
             showProgress(false);
             if (user != null) {
+                Toast.makeText(this, "Login successful! Welcome " + user.getFullName(), 
+                        Toast.LENGTH_SHORT).show();
+                        
                 // Save user data to preferences
                 preferenceManager.saveUserData(
                         user.getUserId(),
@@ -111,8 +129,8 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             } else {
                 Toast.makeText(LoginActivity.this, 
-                        "Login failed. Please check your credentials.", 
-                        Toast.LENGTH_SHORT).show();
+                        "Login failed. Check credentials or account status. See logs for details.", 
+                        Toast.LENGTH_LONG).show();
             }
         });
     }

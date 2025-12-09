@@ -4,12 +4,17 @@ package com.school.management.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.ScrollView;
+import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.textfield.TextInputEditText;
 import com.school.management.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -17,19 +22,59 @@ import java.lang.String;
 
 public final class ActivityRegisterUserBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
+
+  @NonNull
+  public final Button btnCancel;
+
+  @NonNull
+  public final Button btnRegister;
+
+  @NonNull
+  public final TextInputEditText etEmail;
+
+  @NonNull
+  public final TextInputEditText etFullName;
+
+  @NonNull
+  public final TextInputEditText etPassword;
+
+  @NonNull
+  public final TextInputEditText etPhoneNumber;
+
+  @NonNull
+  public final ImageView ivProfile;
+
+  @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
+  public final Spinner spinnerRole;
 
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityRegisterUserBinding(@NonNull LinearLayout rootView, @NonNull Toolbar toolbar) {
+  private ActivityRegisterUserBinding(@NonNull ScrollView rootView, @NonNull Button btnCancel,
+      @NonNull Button btnRegister, @NonNull TextInputEditText etEmail,
+      @NonNull TextInputEditText etFullName, @NonNull TextInputEditText etPassword,
+      @NonNull TextInputEditText etPhoneNumber, @NonNull ImageView ivProfile,
+      @NonNull ProgressBar progressBar, @NonNull Spinner spinnerRole, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.btnCancel = btnCancel;
+    this.btnRegister = btnRegister;
+    this.etEmail = etEmail;
+    this.etFullName = etFullName;
+    this.etPassword = etPassword;
+    this.etPhoneNumber = etPhoneNumber;
+    this.ivProfile = ivProfile;
+    this.progressBar = progressBar;
+    this.spinnerRole = spinnerRole;
     this.toolbar = toolbar;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -54,13 +99,68 @@ public final class ActivityRegisterUserBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnCancel;
+      Button btnCancel = ViewBindings.findChildViewById(rootView, id);
+      if (btnCancel == null) {
+        break missingId;
+      }
+
+      id = R.id.btnRegister;
+      Button btnRegister = ViewBindings.findChildViewById(rootView, id);
+      if (btnRegister == null) {
+        break missingId;
+      }
+
+      id = R.id.etEmail;
+      TextInputEditText etEmail = ViewBindings.findChildViewById(rootView, id);
+      if (etEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.etFullName;
+      TextInputEditText etFullName = ViewBindings.findChildViewById(rootView, id);
+      if (etFullName == null) {
+        break missingId;
+      }
+
+      id = R.id.etPassword;
+      TextInputEditText etPassword = ViewBindings.findChildViewById(rootView, id);
+      if (etPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.etPhoneNumber;
+      TextInputEditText etPhoneNumber = ViewBindings.findChildViewById(rootView, id);
+      if (etPhoneNumber == null) {
+        break missingId;
+      }
+
+      id = R.id.ivProfile;
+      ImageView ivProfile = ViewBindings.findChildViewById(rootView, id);
+      if (ivProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerRole;
+      Spinner spinnerRole = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerRole == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new ActivityRegisterUserBinding((LinearLayout) rootView, toolbar);
+      return new ActivityRegisterUserBinding((ScrollView) rootView, btnCancel, btnRegister, etEmail,
+          etFullName, etPassword, etPhoneNumber, ivProfile, progressBar, spinnerRole, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

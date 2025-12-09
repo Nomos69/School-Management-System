@@ -38,6 +38,7 @@
     <!-- Other Colors -->
     <color name="divider">#E0E0E0</color>
     <color name="icon_gray">#757575</color>
+    <color name="icon_success">#4CAF50</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="transparent">#00000000</color>

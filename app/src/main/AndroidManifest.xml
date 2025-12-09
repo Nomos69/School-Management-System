@@ -164,6 +164,10 @@
         <activity
             android:name=".activities.admin.SystemSettingsActivity"
             android:exported="false" />
+        
+        <activity
+            android:name=".activities.admin.AdminSetupActivity"
+            android:exported="false" />
 
         <!-- Firebase Messaging Service -->
         <service

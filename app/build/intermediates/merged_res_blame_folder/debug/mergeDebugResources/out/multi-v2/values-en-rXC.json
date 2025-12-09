@@ -4,7 +4,7 @@
             "outputFile": "com.school.management.app-mergeDebugResources-52:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rhimar and rhave\\.gradle\\caches\\8.13\\transforms\\b7b43bf06bbcd79b7877c669f5eaac43\\transformed\\core-1.9.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\rhimar and rhave\\.gradle\\caches\\transforms-4\\75a72831bd497fd621eb47a3a1dff084\\transformed\\core-1.9.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rhimar and rhave\\.gradle\\caches\\8.13\\transforms\\9153a2bd2564c83417b9dad331a53579\\transformed\\browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\rhimar and rhave\\.gradle\\caches\\transforms-4\\fc94bbe52cf63552f60315b494d5614f\\transformed\\browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rhimar and rhave\\.gradle\\caches\\8.13\\transforms\\2f88f734b33a8d60ff3cf93379a086e1\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\rhimar and rhave\\.gradle\\caches\\transforms-4\\6cc47e7f2cbc8ac84c7a861fcd59a0dc\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -4,12 +4,17 @@ package com.school.management.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.textfield.TextInputEditText;
 import com.school.management.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -20,11 +25,68 @@ public final class ActivityUserProfileBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final Button btnActivate;
+
+  @NonNull
+  public final Button btnDeactivate;
+
+  @NonNull
+  public final Button btnEditProfile;
+
+  @NonNull
+  public final TextInputEditText etPhoneNumber;
+
+  @NonNull
+  public final ImageView ivProfile;
+
+  @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
   public final Toolbar toolbar;
 
-  private ActivityUserProfileBinding(@NonNull LinearLayout rootView, @NonNull Toolbar toolbar) {
+  @NonNull
+  public final TextView tvCreatedAt;
+
+  @NonNull
+  public final TextView tvEmail;
+
+  @NonNull
+  public final TextView tvFullName;
+
+  @NonNull
+  public final TextView tvLastLogin;
+
+  @NonNull
+  public final TextView tvRole;
+
+  @NonNull
+  public final TextView tvStatus;
+
+  @NonNull
+  public final TextView tvUserId;
+
+  private ActivityUserProfileBinding(@NonNull LinearLayout rootView, @NonNull Button btnActivate,
+      @NonNull Button btnDeactivate, @NonNull Button btnEditProfile,
+      @NonNull TextInputEditText etPhoneNumber, @NonNull ImageView ivProfile,
+      @NonNull ProgressBar progressBar, @NonNull Toolbar toolbar, @NonNull TextView tvCreatedAt,
+      @NonNull TextView tvEmail, @NonNull TextView tvFullName, @NonNull TextView tvLastLogin,
+      @NonNull TextView tvRole, @NonNull TextView tvStatus, @NonNull TextView tvUserId) {
     this.rootView = rootView;
+    this.btnActivate = btnActivate;
+    this.btnDeactivate = btnDeactivate;
+    this.btnEditProfile = btnEditProfile;
+    this.etPhoneNumber = etPhoneNumber;
+    this.ivProfile = ivProfile;
+    this.progressBar = progressBar;
     this.toolbar = toolbar;
+    this.tvCreatedAt = tvCreatedAt;
+    this.tvEmail = tvEmail;
+    this.tvFullName = tvFullName;
+    this.tvLastLogin = tvLastLogin;
+    this.tvRole = tvRole;
+    this.tvStatus = tvStatus;
+    this.tvUserId = tvUserId;
   }
 
   @Override
@@ -54,13 +116,93 @@ public final class ActivityUserProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnActivate;
+      Button btnActivate = ViewBindings.findChildViewById(rootView, id);
+      if (btnActivate == null) {
+        break missingId;
+      }
+
+      id = R.id.btnDeactivate;
+      Button btnDeactivate = ViewBindings.findChildViewById(rootView, id);
+      if (btnDeactivate == null) {
+        break missingId;
+      }
+
+      id = R.id.btnEditProfile;
+      Button btnEditProfile = ViewBindings.findChildViewById(rootView, id);
+      if (btnEditProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.etPhoneNumber;
+      TextInputEditText etPhoneNumber = ViewBindings.findChildViewById(rootView, id);
+      if (etPhoneNumber == null) {
+        break missingId;
+      }
+
+      id = R.id.ivProfile;
+      ImageView ivProfile = ViewBindings.findChildViewById(rootView, id);
+      if (ivProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new ActivityUserProfileBinding((LinearLayout) rootView, toolbar);
+      id = R.id.tvCreatedAt;
+      TextView tvCreatedAt = ViewBindings.findChildViewById(rootView, id);
+      if (tvCreatedAt == null) {
+        break missingId;
+      }
+
+      id = R.id.tvEmail;
+      TextView tvEmail = ViewBindings.findChildViewById(rootView, id);
+      if (tvEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.tvFullName;
+      TextView tvFullName = ViewBindings.findChildViewById(rootView, id);
+      if (tvFullName == null) {
+        break missingId;
+      }
+
+      id = R.id.tvLastLogin;
+      TextView tvLastLogin = ViewBindings.findChildViewById(rootView, id);
+      if (tvLastLogin == null) {
+        break missingId;
+      }
+
+      id = R.id.tvRole;
+      TextView tvRole = ViewBindings.findChildViewById(rootView, id);
+      if (tvRole == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStatus;
+      TextView tvStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvStatus == null) {
+        break missingId;
+      }
+
+      id = R.id.tvUserId;
+      TextView tvUserId = ViewBindings.findChildViewById(rootView, id);
+      if (tvUserId == null) {
+        break missingId;
+      }
+
+      return new ActivityUserProfileBinding((LinearLayout) rootView, btnActivate, btnDeactivate,
+          btnEditProfile, etPhoneNumber, ivProfile, progressBar, toolbar, tvCreatedAt, tvEmail,
+          tvFullName, tvLastLogin, tvRole, tvStatus, tvUserId);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

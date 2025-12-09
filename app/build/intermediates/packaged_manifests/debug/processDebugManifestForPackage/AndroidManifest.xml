@@ -40,6 +40,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.SchoolManagement" >
 
         <!-- Splash Screen -->
@@ -169,6 +170,9 @@
         <!-- System Administration -->
         <activity
             android:name="com.school.management.activities.admin.SystemSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.school.management.activities.admin.AdminSetupActivity"
             android:exported="false" />
 
         <!-- Firebase Messaging Service -->

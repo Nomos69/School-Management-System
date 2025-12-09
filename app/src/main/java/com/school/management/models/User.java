@@ -11,7 +11,7 @@ public class User {
     private String phoneNumber;
     private String role; // ADMIN, TEACHER, STUDENT, PARENT, STAFF WTF iam sleepy na
     private String profileImageUrl;
-    private boolean isActive;
+    private boolean active; // Changed from isActive to match Firebase boolean naming convention
     private Date createdAt;
     private Date lastLogin;
     private Map<String, Object> permissions;
@@ -25,7 +25,7 @@ public class User {
         this.email = email;
         this.fullName = fullName;
         this.role = role;
-        this.isActive = true;
+        this.active = true;
         this.createdAt = new Date();
         this.permissions = new HashMap<>();
     }
@@ -49,8 +49,8 @@ public class User {
     public String getProfileImageUrl() { return profileImageUrl; }
     public void setProfileImageUrl(String profileImageUrl) { this.profileImageUrl = profileImageUrl; }
 
-    public boolean isActive() { return isActive; }
-    public void setActive(boolean active) { isActive = active; }
+    public boolean isActive() { return active; }
+    public void setActive(boolean active) { this.active = active; }
 
     public Date getCreatedAt() { return createdAt; }
     public void setCreatedAt(Date createdAt) { this.createdAt = createdAt; }
@@ -69,7 +69,7 @@ public class User {
         map.put("phoneNumber", phoneNumber);
         map.put("role", role);
         map.put("profileImageUrl", profileImageUrl);
-        map.put("isActive", isActive);
+        map.put("active", active);
         map.put("createdAt", createdAt);
         map.put("lastLogin", lastLogin);
         map.put("permissions", permissions);

@@ -28,16 +28,25 @@ public class AuthRepository {
     public MutableLiveData<User> login(String email, String password) {
         MutableLiveData<User> userLiveData = new MutableLiveData<>();
         
+        Log.d(TAG, "Attempting login for email: " + email);
+        
         firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                         if (firebaseUser != null) {
+                            Log.d(TAG, "Firebase Auth successful. UID: " + firebaseUser.getUid());
                             getUserDetails(firebaseUser.getUid(), userLiveData);
-                            updateLastLogin(firebaseUser.getUid());
+                            // Don't update lastLogin yet - wait until we confirm user doc exists
+                        } else {
+                            Log.e(TAG, "Firebase Auth successful but firebaseUser is null");
+                            userLiveData.setValue(null);
                         }
                     } else {
-                        Log.e(TAG, "Login failed", task.getException());
+                        Log.e(TAG, "Firebase Auth failed", task.getException());
+                        if (task.getException() != null) {
+                            Log.e(TAG, "Error message: " + task.getException().getMessage());
+                        }
                         userLiveData.setValue(null);
                     }
                 });
@@ -82,30 +91,49 @@ public class AuthRepository {
     }
 
     private void getUserDetails(String userId, MutableLiveData<User> userLiveData) {
+        Log.d(TAG, "Getting user details for userId: " + userId);
         firestore.collection(Constants.COLLECTION_USERS)
                 .document(userId)
                 .get()
                 .addOnSuccessListener(documentSnapshot -> {
                     if (documentSnapshot.exists()) {
-                        Log.d(TAG, "User document found. Data: " + documentSnapshot.getData());
-                        User user = documentSnapshot.toObject(User.class);
-                        if (user != null && user.isActive()) {
-                            userLiveData.setValue(user);
-                            logAuditEvent(userId, "USER_LOGIN", "User logged in successfully");
-                        } else if (user == null) {
-                            Log.e(TAG, "User object is null after deserialization");
-                            userLiveData.setValue(null);
-                        } else {
-                            Log.e(TAG, "User isActive is false");
+                        Log.d(TAG, "User document found. Raw data: " + documentSnapshot.getData());
+                        
+                        try {
+                            User user = documentSnapshot.toObject(User.class);
+                            
+                            if (user != null) {
+                                Log.d(TAG, "User deserialized successfully");
+                                Log.d(TAG, "User ID: " + user.getUserId());
+                                Log.d(TAG, "Email: " + user.getEmail());
+                                Log.d(TAG, "Full Name: " + user.getFullName());
+                                Log.d(TAG, "Role: " + user.getRole());
+                                Log.d(TAG, "isActive: " + user.isActive());
+                                
+                                if (user.isActive()) {
+                                    Log.d(TAG, "User is active - login successful!");
+                                    userLiveData.setValue(user);
+                                    updateLastLogin(userId);
+                                    logAuditEvent(userId, "USER_LOGIN", "User logged in successfully");
+                                } else {
+                                    Log.e(TAG, "Login failed: User account is deactivated (isActive = false)");
+                                    userLiveData.setValue(null);
+                                }
+                            } else {
+                                Log.e(TAG, "Login failed: User object is null after deserialization");
+                                userLiveData.setValue(null);
+                            }
+                        } catch (Exception e) {
+                            Log.e(TAG, "Login failed: Exception during deserialization", e);
                             userLiveData.setValue(null);
                         }
                     } else {
-                        Log.e(TAG, "User document does not exist for userId: " + userId);
+                        Log.e(TAG, "Login failed: User document does not exist for userId: " + userId);
                         userLiveData.setValue(null);
                     }
                 })
                 .addOnFailureListener(e -> {
-                    Log.e(TAG, "Error getting user details", e);
+                    Log.e(TAG, "Login failed: Error getting user details from Firestore", e);
                     userLiveData.setValue(null);
                 });
     }

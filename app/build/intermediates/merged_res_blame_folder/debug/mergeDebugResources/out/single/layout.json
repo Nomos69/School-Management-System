@@ -36,6 +36,10 @@
         "source": "com.school.management.app-main-56:/layout/nav_header.xml"
     },
     {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_admin_setup.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_admin_setup.xml"
+    },
+    {
         "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_attendance_report.xml",
         "source": "com.school.management.app-main-56:/layout/activity_attendance_report.xml"
     },
@@ -54,6 +58,10 @@
     {
         "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_users_list.xml",
         "source": "com.school.management.app-main-56:/layout/activity_users_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_user.xml",
+        "source": "com.school.management.app-main-56:/layout/item_user.xml"
     },
     {
         "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_messaging.xml",
