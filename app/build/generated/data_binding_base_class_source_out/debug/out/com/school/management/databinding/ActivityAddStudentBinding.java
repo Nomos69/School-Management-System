@@ -4,12 +4,16 @@ package com.school.management.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.textfield.TextInputEditText;
 import com.school.management.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -17,19 +21,82 @@ import java.lang.String;
 
 public final class ActivityAddStudentBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final CoordinatorLayout rootView;
+
+  @NonNull
+  public final Button btnCancel;
+
+  @NonNull
+  public final Button btnRegister;
+
+  @NonNull
+  public final TextInputEditText etAddress;
+
+  @NonNull
+  public final TextInputEditText etAdmissionNumber;
+
+  @NonNull
+  public final TextInputEditText etClass;
+
+  @NonNull
+  public final TextInputEditText etFatherName;
+
+  @NonNull
+  public final TextInputEditText etFirstName;
+
+  @NonNull
+  public final TextInputEditText etGender;
+
+  @NonNull
+  public final TextInputEditText etLastName;
+
+  @NonNull
+  public final TextInputEditText etMotherName;
+
+  @NonNull
+  public final TextInputEditText etPhoneNumber;
+
+  @NonNull
+  public final TextInputEditText etRollNumber;
+
+  @NonNull
+  public final ImageView ivProfile;
+
+  @NonNull
+  public final ProgressBar progressBar;
 
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityAddStudentBinding(@NonNull LinearLayout rootView, @NonNull Toolbar toolbar) {
+  private ActivityAddStudentBinding(@NonNull CoordinatorLayout rootView, @NonNull Button btnCancel,
+      @NonNull Button btnRegister, @NonNull TextInputEditText etAddress,
+      @NonNull TextInputEditText etAdmissionNumber, @NonNull TextInputEditText etClass,
+      @NonNull TextInputEditText etFatherName, @NonNull TextInputEditText etFirstName,
+      @NonNull TextInputEditText etGender, @NonNull TextInputEditText etLastName,
+      @NonNull TextInputEditText etMotherName, @NonNull TextInputEditText etPhoneNumber,
+      @NonNull TextInputEditText etRollNumber, @NonNull ImageView ivProfile,
+      @NonNull ProgressBar progressBar, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.btnCancel = btnCancel;
+    this.btnRegister = btnRegister;
+    this.etAddress = etAddress;
+    this.etAdmissionNumber = etAdmissionNumber;
+    this.etClass = etClass;
+    this.etFatherName = etFatherName;
+    this.etFirstName = etFirstName;
+    this.etGender = etGender;
+    this.etLastName = etLastName;
+    this.etMotherName = etMotherName;
+    this.etPhoneNumber = etPhoneNumber;
+    this.etRollNumber = etRollNumber;
+    this.ivProfile = ivProfile;
+    this.progressBar = progressBar;
     this.toolbar = toolbar;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -54,13 +121,99 @@ public final class ActivityAddStudentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnCancel;
+      Button btnCancel = ViewBindings.findChildViewById(rootView, id);
+      if (btnCancel == null) {
+        break missingId;
+      }
+
+      id = R.id.btnRegister;
+      Button btnRegister = ViewBindings.findChildViewById(rootView, id);
+      if (btnRegister == null) {
+        break missingId;
+      }
+
+      id = R.id.etAddress;
+      TextInputEditText etAddress = ViewBindings.findChildViewById(rootView, id);
+      if (etAddress == null) {
+        break missingId;
+      }
+
+      id = R.id.etAdmissionNumber;
+      TextInputEditText etAdmissionNumber = ViewBindings.findChildViewById(rootView, id);
+      if (etAdmissionNumber == null) {
+        break missingId;
+      }
+
+      id = R.id.etClass;
+      TextInputEditText etClass = ViewBindings.findChildViewById(rootView, id);
+      if (etClass == null) {
+        break missingId;
+      }
+
+      id = R.id.etFatherName;
+      TextInputEditText etFatherName = ViewBindings.findChildViewById(rootView, id);
+      if (etFatherName == null) {
+        break missingId;
+      }
+
+      id = R.id.etFirstName;
+      TextInputEditText etFirstName = ViewBindings.findChildViewById(rootView, id);
+      if (etFirstName == null) {
+        break missingId;
+      }
+
+      id = R.id.etGender;
+      TextInputEditText etGender = ViewBindings.findChildViewById(rootView, id);
+      if (etGender == null) {
+        break missingId;
+      }
+
+      id = R.id.etLastName;
+      TextInputEditText etLastName = ViewBindings.findChildViewById(rootView, id);
+      if (etLastName == null) {
+        break missingId;
+      }
+
+      id = R.id.etMotherName;
+      TextInputEditText etMotherName = ViewBindings.findChildViewById(rootView, id);
+      if (etMotherName == null) {
+        break missingId;
+      }
+
+      id = R.id.etPhoneNumber;
+      TextInputEditText etPhoneNumber = ViewBindings.findChildViewById(rootView, id);
+      if (etPhoneNumber == null) {
+        break missingId;
+      }
+
+      id = R.id.etRollNumber;
+      TextInputEditText etRollNumber = ViewBindings.findChildViewById(rootView, id);
+      if (etRollNumber == null) {
+        break missingId;
+      }
+
+      id = R.id.ivProfile;
+      ImageView ivProfile = ViewBindings.findChildViewById(rootView, id);
+      if (ivProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new ActivityAddStudentBinding((LinearLayout) rootView, toolbar);
+      return new ActivityAddStudentBinding((CoordinatorLayout) rootView, btnCancel, btnRegister,
+          etAddress, etAdmissionNumber, etClass, etFatherName, etFirstName, etGender, etLastName,
+          etMotherName, etPhoneNumber, etRollNumber, ivProfile, progressBar, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

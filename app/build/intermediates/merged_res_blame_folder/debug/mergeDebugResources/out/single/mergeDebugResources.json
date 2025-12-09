@@ -72,8 +72,16 @@
         "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_library.xml"
     },
     {
+        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\layout_item_student.xml.flat",
+        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\item_student.xml"
+    },
+    {
         "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\layout_activity_calendar.xml.flat",
         "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_calendar.xml"
+    },
+    {
+        "merged": "com.school.management.app-debug-54:/menu_menu_student_profile.xml.flat",
+        "source": "com.school.management.app-main-56:/menu/menu_student_profile.xml"
     },
     {
         "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\layout_activity_gradebook.xml.flat",
@@ -136,6 +144,10 @@
         "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_messaging.xml"
     },
     {
+        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\menu_menu_students_list.xml.flat",
+        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\menu\\menu_students_list.xml"
+    },
+    {
         "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\layout_activity_add_student.xml.flat",
         "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_add_student.xml"
     },
@@ -150,6 +162,10 @@
     {
         "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\drawable_ic_check_circle.xml.flat",
         "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\drawable\\ic_check_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\layout_activity_students_list.xml.flat",
+        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_students_list.xml"
     },
     {
         "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\drawable_ic_sort.xml.flat",
@@ -228,16 +244,16 @@
         "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_teacher_profile.xml"
     },
     {
-        "merged": "com.school.management.app-debug-54:/drawable_ic_cancel.xml.flat",
-        "source": "com.school.management.app-main-56:/drawable/ic_cancel.xml"
-    },
-    {
         "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\drawable_ic_event.xml.flat",
         "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\drawable\\ic_event.xml"
     },
     {
         "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\drawable_ic_message.xml.flat",
         "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\drawable\\ic_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\layout_activity_register_student.xml.flat",
+        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_register_student.xml"
     },
     {
         "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\layout_nav_header.xml.flat",
@@ -278,6 +294,10 @@
     {
         "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\layout_activity_report_card.xml.flat",
         "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_report_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\drawable_ic_cancel.xml.flat",
+        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\drawable\\ic_cancel.xml"
     },
     {
         "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-debug-54:\\layout_activity_fee_management.xml.flat",

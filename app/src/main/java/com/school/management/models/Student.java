@@ -11,6 +11,7 @@ public class Student {
     private String lastName;
     private String rollNumber;
     private String admissionNumber;
+    private String phoneNumber;
     private Date dateOfBirth;
     private String gender;
     private String bloodGroup;
@@ -72,6 +73,9 @@ public class Student {
 
     public String getAdmissionNumber() { return admissionNumber; }
     public void setAdmissionNumber(String admissionNumber) { this.admissionNumber = admissionNumber; }
+
+    public String getPhoneNumber() { return phoneNumber; }
+    public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
 
     public Date getDateOfBirth() { return dateOfBirth; }
     public void setDateOfBirth(Date dateOfBirth) { this.dateOfBirth = dateOfBirth; }

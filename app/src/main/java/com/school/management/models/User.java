@@ -15,6 +15,7 @@ public class User {
     private Date createdAt;
     private Date lastLogin;
     private Map<String, Object> permissions;
+    private String studentId; // Links user to student record
 
     public User() {
         // Required for Firebase
@@ -61,6 +62,9 @@ public class User {
     public Map<String, Object> getPermissions() { return permissions; }
     public void setPermissions(Map<String, Object> permissions) { this.permissions = permissions; }
 
+    public String getStudentId() { return studentId; }
+    public void setStudentId(String studentId) { this.studentId = studentId; }
+
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<>();
         map.put("userId", userId);
@@ -73,6 +77,7 @@ public class User {
         map.put("createdAt", createdAt);
         map.put("lastLogin", lastLogin);
         map.put("permissions", permissions);
+        map.put("studentId", studentId);
         return map;
     }
 }
