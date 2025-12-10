@@ -1,150 +1,234 @@
 [
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_users_list.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_users_list.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_events.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_events.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_teacher_list.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_teacher_list.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_gradebook.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_gradebook.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_user_profile.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_user_profile.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_add_event.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_add_event.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_student_list.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_student_list.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_teacher_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_teacher_list.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_events.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_events.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_add_book.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_add_book.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_payment_history.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_payment_history.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_announcements.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_announcements.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_students_list.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_students_list.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_add_fee.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_add_fee.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_splash.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_student.xml",
+        "source": "com.school.management.app-main-56:/layout/item_student.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_fee_management.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_fee_management.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_teacher_profile.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_teacher_profile.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_timetable.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_timetable.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_attendance.xml",
+        "source": "com.school.management.app-main-56:/layout/item_attendance.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_forgot_password.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_forgot_password.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_messaging.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_messaging.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_gradebook.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_gradebook.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_add_teacher.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_add_teacher.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_exam_list.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_exam_list.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_add_class.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_add_class.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_report_card.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_report_card.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_event.xml",
+        "source": "com.school.management.app-main-56:/layout/item_event.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_admin_setup.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_admin_setup.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_main.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_attendance_report.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_attendance_report.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_message.xml",
+        "source": "com.school.management.app-main-56:/layout/item_message.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\nav_header.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\nav_header.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_login.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_add_student.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_add_student.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_gradebook.xml",
+        "source": "com.school.management.app-main-56:/layout/item_gradebook.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_system_settings.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_system_settings.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_announcement.xml",
+        "source": "com.school.management.app-main-56:/layout/item_announcement.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_parent_dashboard.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_parent_dashboard.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_attendance.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_attendance.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\item_student.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\item_student.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_register_student.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_register_student.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_announcements.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_announcements.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_teacher.xml",
+        "source": "com.school.management.app-main-56:/layout/item_teacher.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\item_user.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\item_user.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_add_examination.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_add_examination.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_class_detail.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_class_detail.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_fee.xml",
+        "source": "com.school.management.app-main-56:/layout/item_fee.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_login.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_report_card.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_report_card.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_student_profile.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_student_profile.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_class.xml",
+        "source": "com.school.management.app-main-56:/layout/item_class.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_students_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_students_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_book_detail.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_book_detail.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_exam_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_exam_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_timetable.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_timetable.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_examination.xml",
+        "source": "com.school.management.app-main-56:/layout/item_examination.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_system_settings.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_system_settings.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_student_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_student_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/nav_header.xml",
+        "source": "com.school.management.app-main-56:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_mark_attendance.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_mark_attendance.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_admin_setup.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_admin_setup.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_attendance_report.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_attendance_report.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_event_detail.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_event_detail.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_class_detail.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_class_detail.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_calendar.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_calendar.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_attendance_detail.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_attendance_detail.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_users_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_users_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_user.xml",
+        "source": "com.school.management.app-main-56:/layout/item_user.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_forgot_password.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_register_user.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_register_user.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_splash.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_fee_detail.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_fee_detail.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_examination_detail.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_examination_detail.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/item_book.xml",
+        "source": "com.school.management.app-main-56:/layout/item_book.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_class_list.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_class_list.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_fee_management.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_fee_management.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_payment_history.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_payment_history.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_parent_dashboard.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_parent_dashboard.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_student_profile.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_student_profile.xml"
+    },
+    {
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_book_issue.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_book_issue.xml"
     },
     {
         "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_add_student.xml",
         "source": "com.school.management.app-main-56:/layout/activity_add_student.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_calendar.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_calendar.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_library.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_library.xml"
     },
     {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_register_user.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_register_user.xml"
-    },
-    {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_messaging.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_messaging.xml"
-    },
-    {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_attendance.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_attendance.xml"
-    },
-    {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_teacher_profile.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_teacher_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_register_student.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_register_student.xml"
-    },
-    {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_library.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_library.xml"
-    },
-    {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_book_issue.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_book_issue.xml"
-    },
-    {
-        "merged": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-mergeDebugResources-53:\\layout\\activity_class_list.xml",
-        "source": "C:\\Users\\rhimar and rhave\\.gradle\\daemon\\8.7\\com.school.management.app-main-56:\\layout\\activity_class_list.xml"
+        "merged": "com.school.management.app-mergeDebugResources-53:/layout/activity_user_profile.xml",
+        "source": "com.school.management.app-main-56:/layout/activity_user_profile.xml"
     }
 ]

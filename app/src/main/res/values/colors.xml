@@ -43,4 +43,16 @@
     <color name="white">#FFFFFF</color>
     <color name="transparent">#00000000</color>
     <color name="ic_launcher_background">#1976D2</color>
+    
+    <!-- Message Priority Colors -->
+    <color name="priority_urgent">#D32F2F</color>
+    <color name="priority_high">#F57C00</color>
+    <color name="priority_medium">#FBC02D</color>
+    <color name="priority_low">#4CAF50</color>
+    
+    <!-- Announcement Category Colors -->
+    <color name="category_academic">#2196F3</color>
+    <color name="category_event">#9C27B0</color>
+    <color name="category_emergency">#D32F2F</color>
+    <color name="category_notice">#FF9800</color>
 </resources>

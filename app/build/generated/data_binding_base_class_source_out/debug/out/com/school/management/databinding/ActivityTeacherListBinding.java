@@ -4,13 +4,15 @@ package com.school.management.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.school.management.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -18,24 +20,33 @@ import java.lang.String;
 
 public final class ActivityTeacherListBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final RecyclerView recyclerView;
+  public final FloatingActionButton fabAddTeacher;
+
+  @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
+  public final RecyclerView recyclerViewTeachers;
 
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityTeacherListBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView recyclerView, @NonNull Toolbar toolbar) {
+  private ActivityTeacherListBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull FloatingActionButton fabAddTeacher, @NonNull ProgressBar progressBar,
+      @NonNull RecyclerView recyclerViewTeachers, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.recyclerView = recyclerView;
+    this.fabAddTeacher = fabAddTeacher;
+    this.progressBar = progressBar;
+    this.recyclerViewTeachers = recyclerViewTeachers;
     this.toolbar = toolbar;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -60,9 +71,21 @@ public final class ActivityTeacherListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.recyclerView;
-      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerView == null) {
+      id = R.id.fabAddTeacher;
+      FloatingActionButton fabAddTeacher = ViewBindings.findChildViewById(rootView, id);
+      if (fabAddTeacher == null) {
+        break missingId;
+      }
+
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerViewTeachers;
+      RecyclerView recyclerViewTeachers = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewTeachers == null) {
         break missingId;
       }
 
@@ -72,7 +95,8 @@ public final class ActivityTeacherListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTeacherListBinding((LinearLayout) rootView, recyclerView, toolbar);
+      return new ActivityTeacherListBinding((CoordinatorLayout) rootView, fabAddTeacher,
+          progressBar, recyclerViewTeachers, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

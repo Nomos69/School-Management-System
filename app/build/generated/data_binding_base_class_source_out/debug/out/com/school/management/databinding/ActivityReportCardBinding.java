@@ -5,6 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.Spinner;
+import android.widget.TableLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
@@ -20,11 +24,43 @@ public final class ActivityReportCardBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
+  public final Spinner spinnerAcademicYear;
+
+  @NonNull
+  public final Spinner spinnerStudent;
+
+  @NonNull
+  public final TableLayout tableLayout;
+
+  @NonNull
   public final Toolbar toolbar;
 
-  private ActivityReportCardBinding(@NonNull LinearLayout rootView, @NonNull Toolbar toolbar) {
+  @NonNull
+  public final TextView tvAcademicYear;
+
+  @NonNull
+  public final TextView tvOverallGPA;
+
+  @NonNull
+  public final TextView tvStudentName;
+
+  private ActivityReportCardBinding(@NonNull LinearLayout rootView,
+      @NonNull ProgressBar progressBar, @NonNull Spinner spinnerAcademicYear,
+      @NonNull Spinner spinnerStudent, @NonNull TableLayout tableLayout, @NonNull Toolbar toolbar,
+      @NonNull TextView tvAcademicYear, @NonNull TextView tvOverallGPA,
+      @NonNull TextView tvStudentName) {
     this.rootView = rootView;
+    this.progressBar = progressBar;
+    this.spinnerAcademicYear = spinnerAcademicYear;
+    this.spinnerStudent = spinnerStudent;
+    this.tableLayout = tableLayout;
     this.toolbar = toolbar;
+    this.tvAcademicYear = tvAcademicYear;
+    this.tvOverallGPA = tvOverallGPA;
+    this.tvStudentName = tvStudentName;
   }
 
   @Override
@@ -54,13 +90,57 @@ public final class ActivityReportCardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerAcademicYear;
+      Spinner spinnerAcademicYear = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerAcademicYear == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerStudent;
+      Spinner spinnerStudent = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerStudent == null) {
+        break missingId;
+      }
+
+      id = R.id.tableLayout;
+      TableLayout tableLayout = ViewBindings.findChildViewById(rootView, id);
+      if (tableLayout == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new ActivityReportCardBinding((LinearLayout) rootView, toolbar);
+      id = R.id.tvAcademicYear;
+      TextView tvAcademicYear = ViewBindings.findChildViewById(rootView, id);
+      if (tvAcademicYear == null) {
+        break missingId;
+      }
+
+      id = R.id.tvOverallGPA;
+      TextView tvOverallGPA = ViewBindings.findChildViewById(rootView, id);
+      if (tvOverallGPA == null) {
+        break missingId;
+      }
+
+      id = R.id.tvStudentName;
+      TextView tvStudentName = ViewBindings.findChildViewById(rootView, id);
+      if (tvStudentName == null) {
+        break missingId;
+      }
+
+      return new ActivityReportCardBinding((LinearLayout) rootView, progressBar,
+          spinnerAcademicYear, spinnerStudent, tableLayout, toolbar, tvAcademicYear, tvOverallGPA,
+          tvStudentName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -170,4 +170,72 @@
     <string name="restore">Restore</string>
     <string name="security">Security</string>
     <string name="permissions">Permissions</string>
+
+    <!-- Attendance -->
+    <string-array name="attendance_status_array">
+        <item>PRESENT</item>
+        <item>ABSENT</item>
+        <item>LATE</item>
+        <item>EXCUSED</item>
+    </string-array>
+
+    <!-- Fee Types -->
+    <string-array name="fee_types_array">
+        <item>TUITION</item>
+        <item>BUS</item>
+        <item>LIBRARY</item>
+        <item>EXAM</item>
+        <item>MISC</item>
+    </string-array>
+
+    <!-- Payment Methods -->
+    <string-array name="payment_method_array">
+        <item>CASH</item>
+        <item>CHEQUE</item>
+        <item>BANK_TRANSFER</item>
+        <item>ONLINE</item>
+        <item>UPI</item>
+    </string-array>
+
+    <!-- Book Categories -->
+    <string-array name="book_categories_array">
+        <item>Fiction</item>
+        <item>Non-Fiction</item>
+        <item>Science</item>
+        <item>History</item>
+        <item>Biography</item>
+        <item>Self-Help</item>
+        <item>Reference</item>
+        <item>Poetry</item>
+        <item>Comics</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Event Types -->
+    <string-array name="event_types_array">
+        <item>SPORTS</item>
+        <item>CULTURAL</item>
+        <item>ACADEMIC</item>
+        <item>HOLIDAY</item>
+    </string-array>
+
+    <!-- Months -->
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    
+    <!-- Messages -->
+    <string name="message_status">Message Status</string>
+    <string name="priority">Priority</string>
 </resources>

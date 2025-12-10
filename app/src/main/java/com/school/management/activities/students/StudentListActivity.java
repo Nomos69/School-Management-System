@@ -76,8 +76,8 @@ public class StudentListActivity extends AppCompatActivity {
 
     private void loadStudents() {
         progressBar.setVisibility(android.view.View.VISIBLE);
+        // Use simple query without orderBy to avoid index requirements
         firestore.collection("students")
-                .orderBy(currentSort, Query.Direction.ASCENDING)
                 .addSnapshotListener((value, error) -> {
                     progressBar.setVisibility(android.view.View.GONE);
                     if (error != null) {
@@ -105,6 +105,26 @@ public class StudentListActivity extends AppCompatActivity {
                 filtered.add(student);
             }
         }
+        
+        // Client-side sorting
+        if (currentSort.equals("firstName")) {
+            filtered.sort((s1, s2) -> s1.getFirstName().compareToIgnoreCase(s2.getFirstName()));
+        } else if (currentSort.equals("admissionNumber")) {
+            filtered.sort((s1, s2) -> {
+                String adm1 = s1.getAdmissionNumber() != null ? s1.getAdmissionNumber() : "";
+                String adm2 = s2.getAdmissionNumber() != null ? s2.getAdmissionNumber() : "";
+                return adm1.compareToIgnoreCase(adm2);
+            });
+        } else if (currentSort.equals("classId")) {
+            filtered.sort((s1, s2) -> {
+                String class1 = s1.getClassId() != null ? s1.getClassId() : "";
+                String class2 = s2.getClassId() != null ? s2.getClassId() : "";
+                return class1.compareToIgnoreCase(class2);
+            });
+        } else if (currentSort.equals("isActive")) {
+            filtered.sort((s1, s2) -> Boolean.compare(s2.isActive(), s1.isActive()));
+        }
+        
         adapter.updateList(filtered);
     }
 

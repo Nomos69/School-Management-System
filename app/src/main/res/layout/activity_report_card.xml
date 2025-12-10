@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -12,14 +13,103 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary" />
     </com.google.android.material.appbar.AppBarLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Report Card"
-            android:textSize="16sp" />
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Student Selection -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Student"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerStudent"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Academic Year Selection -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Academic Year"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerAcademicYear"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <!-- Student Information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/background"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tvStudentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Student Name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvAcademicYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Academic Year: 2024-2025"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvOverallGPA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Overall Score: 0%"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_green_dark" />
+
+            </LinearLayout>
+
+            <!-- Report Card Table -->
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
     </ScrollView>
+
 </LinearLayout>
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <!-- Unread/Read Status -->
+        <ImageView
+            android:id="@+id/ivUnread"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_mail_unread"
+            android:contentDescription="@string/message_status"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Sender Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSenderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sender Name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tvSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textSize="13sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <!-- Priority Badge -->
+        <ImageView
+            android:id="@+id/ivPriority"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_priority_dot"
+            android:contentDescription="@string/priority"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/tvSentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:30 PM"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary" />
+    </LinearLayout>
+
+    <!-- Message Preview -->
+    <TextView
+        android:id="@+id/tvPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message preview text..."
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginStart="24dp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

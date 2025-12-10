@@ -8,4 +8,20 @@
         <item>PARENT</item>
         <item>STAFF</item>
     </string-array>
+
+    <string-array name="class_list_array">
+        <item>Select Class</item>
+        <item>Class 1</item>
+        <item>Class 2</item>
+        <item>Class 3</item>
+        <item>Class 4</item>
+        <item>Class 5</item>
+        <item>Class 6</item>
+        <item>Class 7</item>
+        <item>Class 8</item>
+        <item>Class 9</item>
+        <item>Class 10</item>
+        <item>Class 11</item>
+        <item>Class 12</item>
+    </string-array>
 </resources>

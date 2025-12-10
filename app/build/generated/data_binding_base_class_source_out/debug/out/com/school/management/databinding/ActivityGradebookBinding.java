@@ -5,9 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.school.management.R;
@@ -20,10 +23,28 @@ public final class ActivityGradebookBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
+  public final RecyclerView recyclerView;
+
+  @NonNull
+  public final Spinner spinnerClass;
+
+  @NonNull
+  public final Spinner spinnerExam;
+
+  @NonNull
   public final Toolbar toolbar;
 
-  private ActivityGradebookBinding(@NonNull LinearLayout rootView, @NonNull Toolbar toolbar) {
+  private ActivityGradebookBinding(@NonNull LinearLayout rootView, @NonNull ProgressBar progressBar,
+      @NonNull RecyclerView recyclerView, @NonNull Spinner spinnerClass,
+      @NonNull Spinner spinnerExam, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
+    this.progressBar = progressBar;
+    this.recyclerView = recyclerView;
+    this.spinnerClass = spinnerClass;
+    this.spinnerExam = spinnerExam;
     this.toolbar = toolbar;
   }
 
@@ -54,13 +75,38 @@ public final class ActivityGradebookBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerView;
+      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerView == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerClass;
+      Spinner spinnerClass = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerClass == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerExam;
+      Spinner spinnerExam = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerExam == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new ActivityGradebookBinding((LinearLayout) rootView, toolbar);
+      return new ActivityGradebookBinding((LinearLayout) rootView, progressBar, recyclerView,
+          spinnerClass, spinnerExam, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

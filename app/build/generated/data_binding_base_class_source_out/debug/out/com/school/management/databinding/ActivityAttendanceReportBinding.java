@@ -4,10 +4,13 @@ package com.school.management.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.Spinner;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.school.management.R;
@@ -17,20 +20,60 @@ import java.lang.String;
 
 public final class ActivityAttendanceReportBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final CoordinatorLayout rootView;
+
+  @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
+  public final Spinner spinnerClass;
+
+  @NonNull
+  public final Spinner spinnerMonth;
+
+  @NonNull
+  public final Spinner spinnerYear;
 
   @NonNull
   public final Toolbar toolbar;
 
-  private ActivityAttendanceReportBinding(@NonNull LinearLayout rootView,
-      @NonNull Toolbar toolbar) {
+  @NonNull
+  public final TextView tvAbsentCount;
+
+  @NonNull
+  public final TextView tvAttendancePercentage;
+
+  @NonNull
+  public final TextView tvExcusedCount;
+
+  @NonNull
+  public final TextView tvLateCount;
+
+  @NonNull
+  public final TextView tvPresentCount;
+
+  private ActivityAttendanceReportBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull ProgressBar progressBar, @NonNull Spinner spinnerClass,
+      @NonNull Spinner spinnerMonth, @NonNull Spinner spinnerYear, @NonNull Toolbar toolbar,
+      @NonNull TextView tvAbsentCount, @NonNull TextView tvAttendancePercentage,
+      @NonNull TextView tvExcusedCount, @NonNull TextView tvLateCount,
+      @NonNull TextView tvPresentCount) {
     this.rootView = rootView;
+    this.progressBar = progressBar;
+    this.spinnerClass = spinnerClass;
+    this.spinnerMonth = spinnerMonth;
+    this.spinnerYear = spinnerYear;
     this.toolbar = toolbar;
+    this.tvAbsentCount = tvAbsentCount;
+    this.tvAttendancePercentage = tvAttendancePercentage;
+    this.tvExcusedCount = tvExcusedCount;
+    this.tvLateCount = tvLateCount;
+    this.tvPresentCount = tvPresentCount;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +98,69 @@ public final class ActivityAttendanceReportBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerClass;
+      Spinner spinnerClass = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerClass == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerMonth;
+      Spinner spinnerMonth = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerMonth == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerYear;
+      Spinner spinnerYear = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerYear == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new ActivityAttendanceReportBinding((LinearLayout) rootView, toolbar);
+      id = R.id.tvAbsentCount;
+      TextView tvAbsentCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvAbsentCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAttendancePercentage;
+      TextView tvAttendancePercentage = ViewBindings.findChildViewById(rootView, id);
+      if (tvAttendancePercentage == null) {
+        break missingId;
+      }
+
+      id = R.id.tvExcusedCount;
+      TextView tvExcusedCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvExcusedCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvLateCount;
+      TextView tvLateCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvLateCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvPresentCount;
+      TextView tvPresentCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvPresentCount == null) {
+        break missingId;
+      }
+
+      return new ActivityAttendanceReportBinding((CoordinatorLayout) rootView, progressBar,
+          spinnerClass, spinnerMonth, spinnerYear, toolbar, tvAbsentCount, tvAttendancePercentage,
+          tvExcusedCount, tvLateCount, tvPresentCount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
